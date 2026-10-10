@@ -6,51 +6,71 @@
 <title>A Little Bundle of Love</title>
 <style>
 body {
-font-family: 'Fira Sans', sans-serif;
-background: radial-gradient(circle at top, #ffe4e1, #fff);
+font-family: 'Poppins', sans-serif;
+background: linear-gradient(180deg, #ffe4ec 0%, #fff 100%);
 margin: 0;
 padding: 0;
 text-align: center;
+color: #333;
 }
 nav {
-position: fixed;
-top: 0; left: 0; right: 0;
 background: #ff69b4;
 padding: 10px;
+position: fixed;
+top: 0; left: 0; right: 0;
 z-index: 10;
 }
 nav a {
 color: white;
-margin: 0 10px;
+margin: 0 12px;
 text-decoration: none;
 font-weight: bold;
 }
-section {
-padding: 100px 20px;
-min-height: 100vh;
+.container {
+margin-top: 80px;
+padding: 20px;
+}
+h1 {
+color: #b03060;
+font-size: 2em;
 }
 .sticker {
-max-width: 160px;
+width: 160px;
 border-radius: 10px;
-margin-top: 15px;
+margin-top: 10px;
 }
 .pot {
-margin: 40px auto;
-width: 260px;
-height: 260px;
+margin: 30px auto;
+width: 240px;
+height: 240px;
 border-radius: 50%;
 background: radial-gradient(circle at top, #ffb6c1, #ffd700, #dda0dd);
+box-shadow: 0 0 25px rgba(0,0,0,0.25);
 display: flex;
 align-items: center;
 justify-content: center;
-font-size: 26px;
-color: #333;
-box-shadow: 0 0 25px rgba(0,0,0,0.25);
+flex-wrap: wrap;
+padding: 20px;
+animation: glow 3s infinite alternate;
+}
+@keyframes glow {
+from { box-shadow: 0 0 15px #ffb6c1; }
+to { box-shadow: 0 0 30px #ffd700; }
 }
 .flowers {
-line-height: 1.8;
+font-size: 28px;
+display: flex;
+flex-wrap: wrap;
+gap: 8px;
+justify-content: center;
 }
-h1, h2 { color: #b03060; }
+.caption {
+font-style: italic;
+margin-top: 10px;
+}
+section {
+margin-top: 60px;
+}
 </style>
 </head>
 <body>
@@ -62,21 +82,20 @@ h1, h2 { color: #b03060; }
 <a href="#orchids">Orchids</a>
 </nav>
 
-<section id="home">
+<div class="container" id="home">
 <h1>For Preiti 🌸</h1>
 <img src="preiti-sticker.png" alt="Preiti Sticker" class="sticker">
 <p>Some flowers for someone who makes ordinary days feel a little more magical.</p>
 
+<!-- Mixed Bouquet in Pot -->
 <div class="pot">
 <div class="flowers">
-🌸🌸🌸🌸🌸<br>
-🌻🌻🌻🌻🌻<br>
-🌺🌺🌺🌺🌺
+ 🌸 🌻 🌺 🌸 🌻 🌺 🌸 🌻 🌺 🌸 🌻 🌺 🌸 🌻 🌺
 </div>
 </div>
 
-<p>15 flowers in all — 5 lilies, 5 sunflowers and 5 orchids, arranged beautifully in a little pot of love.</p>
-</section>
+<p class="caption">15 flowers in all — 5 lilies, 5 sunflowers and 5 orchids, arranged together in one beautiful bouquet pot.</p>
+</div>
 
 <section id="lilies">
 <h2>5 Lilies</h2>
